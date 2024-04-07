@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
 namespace Room
 {
     public class InnerRoom : MonoBehaviour
     {
+        
         [Header("Room Components")] 
         public Panel panel;
         public Sign sign;
@@ -15,11 +17,13 @@ namespace Room
         public int roomNumber;
         public int floorNumber;
         
-
         void Start()
         {
             panel = GetComponentInChildren<Panel>();
             sign = GetComponentInChildren<Sign>();
+            
+            // Temporary setup
+            SetProperties(roomNumber, floorNumber);
         }
         
         public void SetProperties(int room, int floor) {

@@ -15,22 +15,27 @@ namespace Room
         [SerializeField] private Material activeMaterial;
 
         private Renderer _renderer;
+
+        private bool _isActive;
         
         // Start is called before the first frame update
         void Start()
         {
             _renderer = GetComponent<Renderer>();
             _renderer.material = idleMaterial;
+
+            _isActive = false;
         }
 
         void OnMouseDown()
         {
-            RoomManager.Instance.OnRoomPanelClicked(this);
+            RoomManager.Instance.ToggleActivePanel(this);
         }
-
-        public void ToggleActive(bool active)
+        
+        public void ToggleActive()
         {
-            GetComponent<Renderer>().material = active ? activeMaterial : idleMaterial;
+            _isActive = !_isActive;
+            GetComponent<Renderer>().material = _isActive ? activeMaterial : idleMaterial;
         }
 
         public void Setup(int roomNumber, int floorNumber)
