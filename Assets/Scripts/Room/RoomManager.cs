@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Room
 {
@@ -27,7 +28,7 @@ namespace Room
         {
             Instance = this;
         }
-        
+
         public void ToggleActivePanel(Panel panel)
         {
             if (activePanel == panel)

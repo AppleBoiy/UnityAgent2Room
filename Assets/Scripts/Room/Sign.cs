@@ -14,10 +14,7 @@ namespace Room
         void Start()
         {
             textMeshPro = GetComponent<TextMeshPro>();
-        }
-        
-        void Update()
-        {
+            
             // Make the sign always face the camera rotate 180 degrees
             transform.rotation = Quaternion.LookRotation(transform.position - Camera.main.transform.position);
         }

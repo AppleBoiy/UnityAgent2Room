@@ -70,4 +70,5 @@ I used the `StarterAssets` package as a base for the project.
 ## References
 
 - [FIRST PERSON MOVEMENT in 10 MINUTES - Unity Tutorial](https://www.youtube.com/watch?v=f473C43s8nE)
+- [Display Glowing NavMesh Path in Unity - #3 Displaying the path](https://www.youtube.com/watch?v=dTlSk9cP7TA)
 - [StarterAssets - FirstPerson](https://assetstore.unity.com/packages/essentials/starterassets-firstperson-updates-in-new-charactercontroller-pac-196525)

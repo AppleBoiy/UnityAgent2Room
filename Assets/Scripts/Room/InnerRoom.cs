@@ -26,7 +26,8 @@ namespace Room
             SetProperties(roomNumber, floorNumber);
         }
         
-        public void SetProperties(int room, int floor) {
+        public void SetProperties(int room, int floor)
+        {
             roomNumber = room;
             floorNumber = floor;
             
