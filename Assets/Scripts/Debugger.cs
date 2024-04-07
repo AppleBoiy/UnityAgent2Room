@@ -26,7 +26,7 @@ public class Debugger : MonoBehaviour
         Debug.Log("Logging system initialized.");
         
         // Test logging system
-        TestLogging();
+        // TestLogging();
     }
 
     /// <summary>
