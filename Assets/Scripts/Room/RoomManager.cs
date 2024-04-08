@@ -19,6 +19,8 @@ namespace Room
 
         public static RoomManager Instance;
         
+        public static CollectableSpawner Spawner;
+        
         // Activated panel
         public Panel activePanel;
         
@@ -31,6 +33,8 @@ namespace Room
 
         public void ToggleActivePanel(Panel panel)
         {
+            Spawner.SpawnNewObject(panel.transform.position.x, panel.transform.position.z);
+            
             if (activePanel == panel)
             {
                 // If the panel is already active, deactivate it
