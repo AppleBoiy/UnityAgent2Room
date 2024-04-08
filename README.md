@@ -1,8 +1,6 @@
 # iNav: Show the path from the agent to the room
 
-## Description
-
-Display the path from the agent to the room using NavMesh.
+Display the path from the agent to the room.
 
 
     Tested on
