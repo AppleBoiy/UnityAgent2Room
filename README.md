@@ -13,7 +13,7 @@ Display the path from the agent to the room.
 - Fixed camera view (Bird Eye View)
 - Logging console messages for debugging ([Debugger.cs](https://gist.github.com/AppleBoiy/958a5b47891e2c789ab0e5e4e5c109c2))
 
-> NOTE:
+> [!IMPORTANT]  
 > For some reason the `NavMeshAgent` is conflict with the `CharacterController` from `[my controller script](https://github.com/AppleBoiy/unity3d-bird-eye-view)`.
 > It's make agent is flying in the air (I don't know why).
 
