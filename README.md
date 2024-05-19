@@ -1,4 +1,4 @@
-# iNav: Show the path from the agent to the room
+# Show the path from the agent to the room
 
 Display the path from the agent to the room.
 
